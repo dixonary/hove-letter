@@ -33,7 +33,6 @@ drawUI Game{..} = return $
                 , padLeft (Pad 4) 
                         $ vBox 
                         $ map (str . show) (take (length _players) _turns)
-                        -- $ map (str.show) deck
                 , padTop (Pad 1) 
                         $ hBorder
                 , padAll 1 $ padLeft (Pad 3) $ str $ "Cards remaining in deck: " ++ show (length _deck)
