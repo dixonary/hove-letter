@@ -484,11 +484,12 @@ immuneNegate chosenPlayer origGame updatedGame =
 
 
 -- Jump straight to the count if there are no cards left
+endGame :: Game -> Game
 endGame g@Game{..} =
     let
         vals = Map.toList _holding
         highestVal = maximum $ fromEnum . snd <$> vals
-        winners = fst <$> filter (\(player,card) -> fromEnum card == highestVal) vals
+        winners = fst <$> filter (\(player,card) -> player `elem` _players && fromEnum card == highestVal) vals
         winnerLog = case winners of
             [] -> "Nobody wins?"
             [x] -> show x ++ " wins!"
