@@ -10,8 +10,10 @@ An implementation of the brilliant game *Love Letter*, written in Haskell.
 1. Install Haskell Stack onto your system through the package manager or the Haskell Stack website.
 2. Grab the source code:
     git clone https://github.com/dixonary/hove-letter
-3. Enter the directory
+3. Enter the directory:
+    ```sh
     cd hove-letter
+    ```
 4. Build and run the code:
     stack build && stack exec love-letter
 
