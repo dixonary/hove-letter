@@ -17,6 +17,6 @@ An implementation of the brilliant game *Love Letter*, written in Haskell.
 
 
 #### From Linux Release
-0. Make sure you have LibGMP installed, against which Haskell binaries are dynamically linked.
+0. Make sure you have LibGMP installed, against which Haskell binaries are dynamically linked. Chances are good that you do.
 1. Download the binary from the Releases page here on GitHub.
 2. Run the binary directly.
