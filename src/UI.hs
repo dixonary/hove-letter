@@ -15,7 +15,7 @@ import Shared
 
 drawUI :: Game -> [Widget Name]
 drawUI Game{..} = return $
-    border $ leftWidget <+> vBorder <+> rightWidget 
+    joinBorders $ border $ leftWidget <+> vBorder <+> rightWidget 
     where
         main = vLimit 4 $ optionWidget _optionsList
 
