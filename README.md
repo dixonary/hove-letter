@@ -38,6 +38,6 @@ There are 3 steps to writing good Haskell code:
 2. Make it simple.
 3. Make it readable.
 
-The code here is very much *stage-one code*. There aren't a million comments.
+The code here is very much *stage-one code*. There aren't a million comments and the actual implementation is fairly crap. There's a lot of low-hanging fruit for refactoring and general niceness improvements!
 
 The AI is also exceptionally stupid, in that it will always play its held card (unless that is an illegal move). Making the AI better is left to the reader.
